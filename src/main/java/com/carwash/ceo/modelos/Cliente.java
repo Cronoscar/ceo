@@ -25,8 +25,8 @@ import lombok.Setter;
 public class Cliente {
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
-@Column(name="codigoCliente")
-private int idcliente;
+@Column(name="codigocliente")
+private int codigocliente;
 @Column(name="nombre")
 private String nombre;
 @Column(name="apellido")
@@ -34,6 +34,6 @@ private String apellido;
 @Column(name="fechaingreso")
 private Date fechaingreso;
 @ManyToOne
-@JoinColumn(name = "idTipoCliente",referencedColumnName = "idTipoCliente")
+@JoinColumn(name = "idtipocliente",referencedColumnName = "idtipocliente")
 private tipoCliente tipoCliente;
 }

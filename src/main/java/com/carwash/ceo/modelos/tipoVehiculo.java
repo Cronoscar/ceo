@@ -24,6 +24,6 @@ public class tipoVehiculo {
     private int idtipovehiculo;
     @Column(name = "descripcion")
     private String descripcion;
-    @Column(name = "precioXhora")
-    private double precioxhora;
+    @Column(name = "precioxhora")
+    private Double precioxhora;
 }

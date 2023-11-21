@@ -4,5 +4,5 @@ public interface tipoClienteService {
 
     
 
-    public String CrearTipoCliente(String descripcio);
+    public String CrearTipoCliente(String descripcion);
 }

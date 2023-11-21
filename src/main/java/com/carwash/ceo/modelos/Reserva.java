@@ -23,7 +23,7 @@ import lombok.Setter;
 public class Reserva {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "idReserva")
+    @Column(name = "idreserva")
     private int idreserva;
     @Column(name = "fecha")
     private Date fecha;
@@ -32,5 +32,5 @@ public class Reserva {
     @Column(name = "total")
     private double total;
    private int idcliente;
-   private int idVehiculo;  
+   private int idvehiculo;  
 }
