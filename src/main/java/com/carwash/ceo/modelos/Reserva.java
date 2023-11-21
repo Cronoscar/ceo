@@ -7,6 +7,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.Table;
 
 @Entity
@@ -22,7 +23,10 @@ public class Reserva {
     private int dias;
     @Column(name = "total")
     private double total;
-        
+    @JoinColumn(name = "idCliente",referencedColumnName = "idCliente")
+    private Cliente cliente; 
+      @JoinColumn(name = "idVehiculo",referencedColumnName = "idVehiculo")
+    private Vehiculo vehiculo;   
 
     
     

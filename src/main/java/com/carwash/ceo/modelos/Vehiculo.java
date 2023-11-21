@@ -6,6 +6,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Table;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 @Entity
 @Table(name = "vehiculo")
 public class Vehiculo {
@@ -19,4 +21,7 @@ public class Vehiculo {
     private int anio;
     @Column(name = "disponible")
     private boolean disponible;
+    @ManyToOne  
+    @JoinColumn(name = "idTipoVehiculo",referencedColumnName = "idTipoVehiculo")  
+    private tipoVehiculo tipoVehiculo;
 }

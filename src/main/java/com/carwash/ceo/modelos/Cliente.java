@@ -7,6 +7,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -23,5 +25,9 @@ private String nombre;
 private String apellido;
 @Column(name="fechaingreso")
 private Date fechaingreso;
+
+@ManyToOne
+@JoinColumn(name = "idTipoCliente",referencedColumnName = "idTipoCliente")
+private tipoCliente tipoCliente;
 
 }
