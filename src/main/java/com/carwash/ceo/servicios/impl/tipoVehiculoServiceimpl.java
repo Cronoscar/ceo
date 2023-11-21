@@ -1,5 +1,6 @@
 package com.carwash.ceo.servicios.impl;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.carwash.ceo.modelos.tipoVehiculo;
@@ -11,8 +12,8 @@ public class tipoVehiculoServiceimpl implements tipoVehiculoService {
     private tipoVehiculoRepository tipoVehiculoRepository;
     @Override
     public String creartipovehiculo(tipoVehiculo nTipoVehiculo) {
-    
-    this.tipoVehiculoRepository.save(nTipoVehiculo);
+    /* this.tipoVehiculoRepository.save(nTipoVehiculo); */
+   
     return "tipovehicuelo agregado";
     
 }
