@@ -20,7 +20,7 @@ import lombok.Setter;
 public class tipoVehiculo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "idTipoVehículo")
+    @Column(name = "idTipoVehiculo")
     private int idtipovehiculo;
     @Column(name = "descripcion")
     private String descripcion;

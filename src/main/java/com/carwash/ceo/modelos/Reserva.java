@@ -31,12 +31,6 @@ public class Reserva {
     private int dias;
     @Column(name = "total")
     private double total;
-    @JoinColumn(name = "idCliente",referencedColumnName = "idCliente")
-    private Cliente cliente; 
-      @JoinColumn(name = "idVehiculo",referencedColumnName = "idVehiculo")
-    private Vehiculo vehiculo;   
-
-    
-    
-
+   private int idcliente;
+   private int idVehiculo;  
 }

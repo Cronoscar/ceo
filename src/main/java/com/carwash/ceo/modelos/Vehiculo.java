@@ -1,5 +1,6 @@
 package com.carwash.ceo.modelos;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -29,7 +30,7 @@ public class Vehiculo {
     private int anio;
     @Column(name = "disponible")
     private boolean disponible;
-    @ManyToOne  
+    @ManyToOne()  
     @JoinColumn(name = "idTipoVehiculo",referencedColumnName = "idTipoVehiculo")  
     private tipoVehiculo tipoVehiculo;
 }
