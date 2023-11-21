@@ -11,7 +11,7 @@ import com.carwash.ceo.servicios.impl.tipoVehiculoServiceimpl;
 @RestController
 @RequestMapping("api/tipovehiculo")
 public class tipoVehiculoController {
-    @Autowired
+ @Autowired
 private tipoVehiculoServiceimpl tipoVehiculoServiceimpl;
 @PostMapping("/agregar")
 public String guardartipovehiculo(tipoVehiculo nTipoVehiculo){

@@ -5,7 +5,7 @@ import com.carwash.ceo.modelos.Vehiculo;
 public interface vehiculoService {
 
     
-public Vehiculo Crearvehiculo(Vehiculo nVehiculo);
+public String Crearvehiculo(Vehiculo nVehiculo);
     
     
 }

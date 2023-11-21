@@ -11,12 +11,9 @@ public class tipoVehiculoServiceimpl implements tipoVehiculoService {
     private tipoVehiculoRepository tipoVehiculoRepository;
     @Override
     public String creartipovehiculo(tipoVehiculo nTipoVehiculo) {
-        
-if(this.tipoVehiculoRepository.existsById(nTipoVehiculo.getIdtipovehiculo())){
-    return "tipo de vehiculo ya existe";
-}
-this.tipoVehiculoRepository.save(nTipoVehiculo);
-return "tipovehicuelo agregado";
+    
+    this.tipoVehiculoRepository.save(nTipoVehiculo);
+    return "tipovehicuelo agregado";
     
 }
 }
